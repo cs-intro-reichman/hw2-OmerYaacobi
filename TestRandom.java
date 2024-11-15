@@ -16,7 +16,6 @@ public  class  TestRandom {
 
 	}
 
-	System.out.println("% java TestRandom "+ R);
 	System.out.println("> 0.5:  "+ (int) Big+ " times");
 	System.out.println("<= 0.5: "+ (int) Small+ " times");
 
