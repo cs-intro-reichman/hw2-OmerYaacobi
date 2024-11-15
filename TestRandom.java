@@ -2,7 +2,22 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	
-	
+	int N= Integer.parseInt(args[0]);
+	int Big= 0;
+	int Small= 0;
+	int a= 1;
+
+	while (N>0) {
+		a= (int) (Math.random()+ 0.5);
+		if (a>1){Big++;}
+		else {Small--;}
+
+		N--;
+
+	}
+	System.out.println("% java TestRandom"+ N);
+	System.out.println("> 0.5: "+ Big+ "times");
+	System.out.println("<= 0.5: "+ Small+ "times");
 
 	}
 }

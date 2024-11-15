@@ -16,7 +16,7 @@ public class Cheers {
                     i=i-1;
                     
             }
-            System.out.println("What does it spell?");
+            System.out.println("What does that spell?");
             while (number>0) {
                     System.out.println(chosenWord+ "!!!");
                     number= number-1;
