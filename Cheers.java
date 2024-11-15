@@ -11,8 +11,8 @@ public class Cheers {
 
             while (i>0) {
                     char Letter= chosenWord.charAt(chosenWord.length()-i);
-                    if (char_an.indexOf(Letter) != -1){System.out.println("Give me an "+ Letter+ "!");}
-                    else{System.out.println("Give me a  "+ Letter+ "!");}
+                    if (char_an.indexOf(Letter) != -1){System.out.println("Give me an "+ Letter+ ": "+ Letter+ "!");}
+                    else{System.out.println("Give me a  "+ Letter+ ": "+ Letter+ "!");}
                     i=i-1;
                     
             }
