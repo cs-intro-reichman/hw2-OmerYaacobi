@@ -3,21 +3,28 @@ public  class  TestRandom {
 	public static void main(String[]  args) {
 	
 	int N= Integer.parseInt(args[0]);
-	int Big= 0;
-	int Small= 0;
-	int a= 1;
+	int R= Integer.parseInt(args[0]);
+	double Big= 0;
+	double Small= 0;
+	
 
 	while (N>0) {
-		a= (int) (Math.random()+ 0.5);
-		if (a>1){Big++;}
-		else {Small--;}
+		double a= (Math.random()+0.5);
+		
+		if (a>1){Big= Big+1;}
+		else {Small= Small+1;}
 
 		N--;
 
 	}
-	System.out.println("% java TestRandom"+ N);
-	System.out.println("> 0.5: "+ Big+ "times");
-	System.out.println("<= 0.5: "+ Small+ "times");
+
+	System.out.println("% java TestRandom "+ R);
+	System.out.println("> 0.5:  "+ (int) Big+ " times");
+	System.out.println("<= 0.5: "+ (int) Small+ " times");
+
+	if (Small>0){double Ratio= Big/Small;
+	System.out.println("Ratio:  "+ Ratio);
+	}
 
 	}
 }
