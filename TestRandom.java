@@ -2,19 +2,17 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	
-	int N= Integer.parseInt(args[0]);
-	int R= Integer.parseInt(args[0]);
-	double Big= 0;
-	double Small= 0;
+	int N = Integer.parseInt(args[0]);
+	int R = Integer.parseInt(args[0]);
+	double Big = 0;
+	double Small = 0;
 	
 
-	while (N>0) {
-		double a= (Math.random()+0.5);
+	for (int i=0;i<N;i++) {
+		double a= (Math.random());
 		
-		if (a>1){Big= Big+1;}
-		else {Small= Small+1;}
-
-		N--;
+		if (a>0.5){Big++;}
+		else {Small++;}
 
 	}
 
