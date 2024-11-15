@@ -28,8 +28,9 @@ public class Collatz {
 		System.out.println("");
 		row++;
 			 }
-			}
-		if (mode .equals("c")) {
+			 System.out.println("Every one of the first "+ numOfRepeats+ " hailstone sequences reached 1.");
+		}
+		else {
 			System.out.println("Every one of the first "+ numOfRepeats+ " hailstone sequences reached 1.");
 		}
 			
